@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Pruebas sobre la web Peru Rail con TesNG">
+    <test verbose="2" preserve-order="true" name="C:/Users/princ/IdeaProjects/InicioAutomatizacion">
+        <classes>
+            <class name="TestCasesNotomarEnCuenta.TestCases">
+                <methods>
+                    <include name="setUp"/>
+                </methods>
+            </class>
+
+            <class name="com.primerproyecto.pom.flor.web.steps.TestNgStep">
+                <methods>
+                    <include name="tearDown"/>
+                </methods>
+            </class>
+
+
+        </classes>
+    </test>
+</suite>
