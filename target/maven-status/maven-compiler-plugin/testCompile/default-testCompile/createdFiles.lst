@@ -1,0 +1,13 @@
+com\primerproyecto\pom\flor\web\steps\SunatStep.class
+com\primerproyecto\pom\flor\web\page\HomeAmazon.class
+com\primerproyecto\pom\flor\web\stepdefinition\IdentificacionStepDefinition.class
+com\primerproyecto\pom\flor\web\steps\IdentificacionStep.class
+com\primerproyecto\pom\flor\web\steps\PeruRailStep.class
+com\primerproyecto\pom\flor\web\steps\HomeAmazonStep.class
+runner\RunnerTest.class
+com\primerproyecto\pom\flor\web\stepdefinition\TestNgStepDefinition.class
+com\primerproyecto\pom\flor\web\stepdefinition\SunatStepDefinition.class
+com\primerproyecto\pom\flor\web\stepdefinition\PeruRailStepDefinition.class
+com\primerproyecto\pom\flor\web\steps\TestNgStep.class
+TestCasesNotomarEnCuenta\TestCases.class
+com\primerproyecto\pom\flor\web\stepdefinition\HomeAmazonStepDefinition.class

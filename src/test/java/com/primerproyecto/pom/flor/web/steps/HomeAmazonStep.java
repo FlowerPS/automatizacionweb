@@ -1,8 +1,8 @@
 package com.primerproyecto.pom.flor.web.steps;
 
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -10,8 +10,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.BeforeTest;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 
 public class HomeAmazonStep {
@@ -20,30 +22,28 @@ public class HomeAmazonStep {
     private WebDriver webdriver;
     private WebElement webElement;
 
-    // Etiqueta de jUNIt 5
-    @BeforeEach
+
+  @BeforeTest
     public void setUp(){
 
-        System.setProperty("flor.webdriver.chrome.driver", "/src/test/recursos/chromedriver.exe" );
-        ChromeOptions options= new ChromeOptions();
+      WebDriverManager.chromiumdriver().setup();
+      System.setProperty("flor.webdriver.chrome.driver", "/src/test/recursos/chromedriver.exe" );
+      ChromeOptions options= new ChromeOptions();
+      Logger logger = Logger.getLogger("HHH");
+      options.addArguments("--remote-allow-origins=*");
+      options.addArguments("--window-position=500,300");
+      options.addArguments("--window-size=1200,400");
+      //options.addArguments("--headless"); ejecuta el scrip sin la interfaz
 
-        options.addArguments("--remote-allow-origins=*");
-        options.addArguments("--window-position=500,300");
-        options.addArguments("--window-size=1200,400");
-        //options.addArguments("--headless"); ejecuta el scrip sin la interfaz
+      webdriver = new ChromeDriver(options);
+      webdriver.get("https://www.amazon.com/"); //Metodo que navega en la web indicada
+      webdriver.manage().window().maximize();
+      // webdriver.manage().window().fullscreen();
+      String title=webdriver.getTitle();
+      System.out.println( "El titulo es "+ title ); //metodo que obtiene el titulo de la pagina
+      // System.out.println(" La URL es "+ webdriver.getCurrentUrl()); //Metodo que obtiene la url de la web
 
-        webdriver = new ChromeDriver(options);
-        webdriver.get("https://www.amazon.com/"); //Metodo que navega en la web indicada
-        webdriver.manage().window().maximize();
-        // webdriver.manage().window().fullscreen();
-        String title=webdriver.getTitle();
-        System.out.println( "El titulo es "+ title ); //metodo que obtiene el titulo de la pagina
-       // System.out.println(" La URL es "+ webdriver.getCurrentUrl()); //Metodo que obtiene la url de la web
-
-        //Thread.sleep(4000);
-
-
-
+      //Thread.sleep(4000);
     }
 
 
@@ -107,6 +107,8 @@ public class HomeAmazonStep {
 
 
      return nombre;
+
+
  }
 
 

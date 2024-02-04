@@ -139,7 +139,7 @@
             <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 10-05-2023 12:18</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 03-02-2024 22:35</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -178,9 +178,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">
+                                <span class="error-color">
                                     Ingreso a la pagina home y verifico el titulo
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -220,12 +220,12 @@
                 <td colspan="5"></td>
             </tr>
 
-                <tr class="test-SUCCESS">
+                <tr class="test-ERROR">
 
                     <td width="50" class="step-icon">
                         <a name="0"></a>
                             <span style="margin-left: 20px;"
-                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a>
                                 </span>
                     </td>
 
@@ -239,15 +239,53 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">7s 589ms</span></td>
+                    <td width="130"><span class="top-level-step">ERROR</span></td>
+                    <td width="100"><span class="top-level-step">3s 432ms</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                    <tr class="test-ERROR">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-1"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-1">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.IllegalStateException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.primerproyecto.pom.flor.web.steps.TestNgStep.tearDown(TestNgStep.java:24)<br />com.primerproyecto.pom.flor.web.stepdefinition.TestNgStepDefinition.queIngreséALaPaginaWeb(TestNgStepDefinition.java:18)<br />✽.Que ingresé a la pagina web(file:///C:/Users/princ/IdeaProjects/InicioAutomatizacion/src/test/recursos/features/testNG.feature:9)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                        </td>
+                    </tr>
+                <tr class="test-SKIPPED">
 
                     <td width="50" class="step-icon">
                         <a name="1"></a>
                             <span style="margin-left: 20px;"
-                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-skip-forward skipped-icon ' title='SKIPPED'></i></a>
                                 </span>
                     </td>
 
@@ -261,15 +299,15 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">002ms</span></td>
+                    <td width="130"><span class="top-level-step">SKIPPED</span></td>
+                    <td width="100"><span class="top-level-step">011ms</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-SKIPPED">
 
                     <td width="50" class="step-icon">
                         <a name="2"></a>
                             <span style="margin-left: 20px;"
-                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-skip-forward skipped-icon ' title='SKIPPED'></i></a>
                                 </span>
                     </td>
 
@@ -283,13 +321,13 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">001ms</span></td>
+                    <td width="130"><span class="top-level-step">SKIPPED</span></td>
+                    <td width="100"><span class="top-level-step"></span></td>
                 </tr>
-            <tr class="test-SUCCESS">
+            <tr class="test-ERROR">
                     <td colspan="2"></td>
-                <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                <td width="100"><span class="top-level-step"><em>7.68s</em></span></td>
+                <td width="130"><span class="top-level-step"><em>ERROR</em></span></td>
+                <td width="100"><span class="top-level-step"><em>3.58s</em></span></td>
             </tr>
 
         </table>

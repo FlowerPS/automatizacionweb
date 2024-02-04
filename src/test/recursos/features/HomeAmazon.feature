@@ -7,7 +7,7 @@ Feature: Homepage
     Given Ingresé a la web de Amazon
     #When Paso el mouse por un producto
     When Busco producto  ok
-    And Validar que el  campo Deliver to sea Peru
+    And Valido que el  campo Deliver to sea Peru
     And Reviso los elementos del campo Idiomas
     And Presiono el teclado TAB
     Then Salgo de la web

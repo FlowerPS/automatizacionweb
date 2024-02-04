@@ -49,12 +49,13 @@ public class HomeAmazonStepDefinition  extends HomeAmazonStep {
 
     }
 
-    @And("Validar que el  campo Deliver to sea Peru")
-    public void Validar_que_el_campo_Deliver_to_sea_Peru() {
+    @And("Valido que el  campo Deliver to sea Peru")
+    public void Valido_que_el_campo_Deliver_to_sea_Peru() {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("Hi Flor you entered the third method");
 
         assertEquals("Peru", homeAmazonStep.captureDeliverTo());
+        System.out.println("Delivery to"+ captureDeliverTo());
     }
 
     @And("Reviso los elementos del campo Idiomas")
@@ -78,7 +79,7 @@ public class HomeAmazonStepDefinition  extends HomeAmazonStep {
     public void salgo_de_la_web() {
         // Write code here that turns the phrase above into concrete actions
 
-        System.out.println("Hi Flor you entered the sixth method");
+        System.out.println("Hi Flor you entered the eight method");
         //homeAmazonStep.tearDown();
 
     }
